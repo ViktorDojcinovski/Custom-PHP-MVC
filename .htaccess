@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^my-mvc-2.local$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^my-mvc-2.local$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/index.php?$1 [L,QSA]
