@@ -19,7 +19,7 @@ class Home extends \Core\Controller
     public function indexAction()
     {
         View::renderTemplate('Home/index.php', [
-            'name' => 'Viktor'
+            'name' => 'Alien'
         ]);
     }
 
